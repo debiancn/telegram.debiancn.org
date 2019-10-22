@@ -22,33 +22,36 @@
     <style>
         html {
             font-size: 20px;
+            height: 100%;
         }
 
         body {
-            height: 100%;
             width: 100%;
-            background: #f3f3f3;
             color: #3b4351;
+            background-color: #f3f3f3;
             font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
             font-size: .8rem;
             overflow-x: hidden;
             text-rendering: optimizeLegibility;
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
         }
 
         #main {
             text-align: center;
-            position: absolute;
-            top: calc(50% - 312px + 64px + 47px);
-            width: 100%;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .group-block-div {
             display: inline-block;
+            margin: 1em 0;
         }
 
         .header {
-            position: absolute;
-            top: 0;
             width: 100%;
             color: #FFF;
             background: #32afed;
@@ -189,9 +192,6 @@
         }
 
         .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
         }
 
         .footer p {
@@ -213,32 +213,34 @@
         <a href="https://telegram.org" target="_blank" rel="external noopener noreferrer">还没有 <strong>Telegram</strong>？马上试试！</a>
     </div>
     <div id="main">
-        <div class="group-block-div">
-            <div class="logo-div">
-                <img class="logo-img" src="./logo_main.jpg">
+        <div class="group-blocks">
+            <div class="group-block-div">
+                <div class="logo-div">
+                    <img class="logo-img" src="./logo_main.jpg">
+                </div>
+                <div class="content-div">
+                    <h1 class="title">Debian 中文</h1>
+                    <p>Debian 中文社区 Telegram 讨论组</p>
+                </div>
+                <div class="action-div">
+                    <a id="tgActionMain" class="button">加入 Teleram 群组</a>
+                    <br>
+                    <a id="tgLinkMain" class="link" rel="external noopener noreferrer">群组链接</a>
+                </div>
             </div>
-            <div class="content-div">
-                <h1 class="title">Debian 中文</h1>
-                <p>Debian 中文社区 Telegram 讨论组</p>
-            </div>
-            <div class="action-div">
-                <a id="tgActionMain" class="button">加入 Teleram 群组</a>
-                <br>
-                <a id="tgLinkMain" class="link" rel="external noopener noreferrer">群组链接</a>
-            </div>
-        </div>
-        <div class="group-block-div">
-            <div class="logo-div">
-                <img class="logo-img" src="./logo_offtopic.jpg">
-            </div>
-            <div class="content-div">
-                <h1 class="title">Debian 中文离题组</h1>
-                <p>Debian 中文社区 Telegram 离题讨论组</p>
-            </div>
-            <div class="action-div">
-                <a id="tgActionOt" class="button">加入 Teleram 群组</a>
-                <br>
-                <a id="tgLinkOt" class="link" rel="external noopener noreferrer">群组链接</a>
+            <div class="group-block-div">
+                <div class="logo-div">
+                    <img class="logo-img" src="./logo_offtopic.jpg">
+                </div>
+                <div class="content-div">
+                    <h1 class="title">Debian 中文离题组</h1>
+                    <p>Debian 中文社区 Telegram 离题讨论组</p>
+                </div>
+                <div class="action-div">
+                    <a id="tgActionOt" class="button">加入 Teleram 群组</a>
+                    <br>
+                    <a id="tgLinkOt" class="link" rel="external noopener noreferrer">群组链接</a>
+                </div>
             </div>
         </div>
     </div>
