@@ -250,7 +250,7 @@
     <script>
         window.TG_GROUP_TYPE = 'private'; // Can be 'public', 'private' or 'disabled'
         window.TG_GROUP_MAIN_LINK = 'BWBP2LLKd-wwMmU1'; // t.me/{slug} or t.me/joinchat/{slug}. Depends on the group type.
-        window.TG_GROUP_OT_LINK = '+xUyO1RonDeVmNDdl';
+        window.TG_GROUP_OT_LINK = 'xUyO1RonDeVmNDdl';
     </script>
     <script>
         (function () {
@@ -263,11 +263,8 @@
             } else if (window.TG_GROUP_TYPE === 'private') {
                 tgLinkMain = 'https://t.me/joinchat/' + window.TG_GROUP_MAIN_LINK;
                 tgActionMain = 'tg://join?invite=' + window.TG_GROUP_MAIN_LINK;
-                //tgLinkOt = 'https://t.me/joinchat/' + window.TG_GROUP_OT_LINK;
-                //tgActionOt = 'tg://join?invite=' + window.TG_GROUP_OT_LINK;
-                tgLinkOt = 'https://t.me/' + window.TG_GROUP_OT_LINK;
-                tgActionOt = 'tg://resolve?domain=' + window.TG_GROUP_OT_LINK;
-                
+                tgLinkOt = 'https://t.me/joinchat/' + window.TG_GROUP_OT_LINK;
+                tgActionOt = 'tg://join?invite=' + window.TG_GROUP_OT_LINK;
                 document.getElementById('tgActionMain').setAttribute('href', tgActionMain);
                 document.getElementById('tgLinkMain').setAttribute('href', tgLinkMain);
                 document.getElementById('tgActionOt').setAttribute('href', tgActionOt);
